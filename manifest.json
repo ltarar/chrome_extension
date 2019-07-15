@@ -1,0 +1,17 @@
+{
+"manifest_version": 2,
+    "name": "English to Spanish",
+    "description": "Replaces some basic English words to Spanish on a web page",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
